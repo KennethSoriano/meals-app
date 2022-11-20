@@ -1,23 +1,8 @@
-import {
-  Text,
-  View,
-  Pressable,
-  Image,
-  StyleSheet,
-  Platform,
-} from "react-native";
+import {Text, View, Pressable, Image, StyleSheet, Platform } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import MealDetails from "../MealDetails";
 
-function MealItem({
-  id,
-  title,
-  imageUrl,
-  duration,
-  complexity,
-  affordability,
-  route,
-}) {
+function MealItem({id, title, imageUrl, duration, complexity, affordability, route}) {
   const navigation = useNavigation();
 
   function selectMealItemHandler() {
